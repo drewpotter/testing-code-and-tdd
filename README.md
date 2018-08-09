@@ -8,6 +8,6 @@ This presentation will continue to be improved over time.
 
 MIT licensed
 
-Presentation copyright (C) 2018 UNEP-WCMC, https://unep-wcmc.org
+Presentation copyright (C) 2018 UNEP-WCMC, https://www.unep-wcmc.org
 
 Reveal.js copyright (C) 2018 Hakim El Hattab, http://hakim.se
