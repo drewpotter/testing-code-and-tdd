@@ -4,6 +4,18 @@ A presentation about testing code and Test-driven Development. Why it is so vita
 
 This presentation will continue to be improved over time.
 
+## Setup
+
+Install dependencies
+```
+$ npm install
+```
+Serve the presentation and monitor source files for changes
+```
+$ npm start
+```
+Open http://localhost:8000 to view the presentation
+
 ## License
 
 MIT licensed
