@@ -235,8 +235,60 @@ Failures:
 ```
 
 
-## Slide 2
+## TDD; Create the method
 
-```js
-var a = 1;
+So now create the `bonjour` method inside the `HelloWorld` class.
+
+Remember we are doing the minimum amount of work for each step.
+
+
+## TDD; Add the method
+
 ```
+class HelloWorld
+  def self.bonjour
+
+  end
+end
+```
+We use `self` because it is a class method.
+
+
+## TDD; Re-run the test
+
+```
+F
+
+Failures:
+
+  1) HelloWorld should output 'Hello world'
+     Failure/Error: expect(output).to eq("Hello world")
+
+       expected: "Hello world"
+            got: nil
+
+       (compared using ==)
+```
+
+
+## TDD; Add "Hello world"
+
+```
+class HelloWorld
+  def self.bonjour
+    "Hello world"
+  end
+end
+```
+
+
+## TDD; Rerun the test
+
+```
+Finished in 0.00715 seconds (files took 0.18603 seconds to load)
+1 example, 0 failures
+```
+
+
+## TDD; Summary
+* We have gone through the basic steps of using TDD.
