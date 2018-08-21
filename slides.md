@@ -50,6 +50,96 @@ It may seem obvious. Testing is where we test our software to see if it works pr
 This method of development allows us to continually refactor until all duplication is removed.
 
 
+## Testing frameworks
+
+Many testing frameworks exist, here I will discuss a few of these.
+
+
+## Testing frameworks; Ruby
+* RSpec; BDD
+* Cucumber; plain language
+* Minitest; used by Rails
+
+
+## Testing frameworks; JavaScript
+* Mocha
+* Chai
+
+
+## Testing frameworks; Solidity
+* Truffle Suite
+
+
+## Testing frameworks; Elixir
+* ExUnit
+
+
+## Let's look at RSpec
+
+* Install RSpec
+* Write a spec
+* Run the spec;
+* Drive development of our app.
+
+
+## Install RSpec
+
+```
+gem install rspec
+```
+
+
+## Write a spec
+
+```
+RSpec.describe something do
+
+end
+```
+
+
+## Write a spec
+
+hello_world_spec.rb
+```
+RSpec.describe HelloWorld do
+
+end
+```
+
+
+## Create a class
+
+To run this spec we can do this, from the same folder:
+```
+rspec hello_world_spec.rb
+```
+
+
+## Output
+
+```
+An error occurred while loading ./hello_world_spec.rb.
+Failure/Error:
+  RSpec.describe HelloWorld do
+
+  end
+
+NameError:
+  uninitialized constant HelloWorld
+```
+
+
+## Why?
+
+Does anyone who doesn't work with Ruby every day want to guess why this won't work?
+
+
+## Test Failure
+
+This is because we have not defined the `HelloWorld` class yet.
+
+
 ## Slide 2
 
 ```js
