@@ -108,7 +108,7 @@ end
 ```
 
 
-## Create a class
+## Run the spec
 
 To run this spec we can do this, from the same folder:
 ```
@@ -138,6 +138,101 @@ Does anyone who doesn't work with Ruby every day want to guess why this won't wo
 ## Test Failure
 
 This is because we have not defined the `HelloWorld` class yet.
+
+
+## The HelloWorld class
+
+Create a file in the same folder:
+`hello_world.rb`
+
+
+## The HelloWorld class
+
+```
+class HelloWorld
+
+end
+```
+
+
+## Re-run the test
+
+```
+An error occurred while loading ./hello_world_spec.rb.
+Failure/Error:
+  RSpec.describe HelloWorld do
+
+  end
+
+NameError:
+  uninitialized constant HelloWorld
+```
+
+
+## The same test failure
+
+It is clear that the test is failing again.
+The spec cannot find the the `HelloWorld` class.
+
+
+## To fix this
+
+Add to the top of the spec:
+```
+require_relative 'hello_world'
+
+```
+
+
+## Rerun the spec
+
+```
+Finished in 0.00024 seconds (files took 0.26015 seconds to load)
+0 examples, 0 failures
+```
+No errors
+
+
+## Let's build the class
+
+Next we will build the test and the class with a method to output "Hello World".
+
+
+## TDD; Our expectations?
+
+* We want a method which will output "Hello World"
+* Running this method will return "Hello World"
+
+
+## TDD; Write our test in our spec
+
+```
+RSpec.describe HelloWorld do
+
+  it "should output 'Hello world'" do
+    output = HelloWorld.bonjour
+    expect(output).to eq("Hello world")
+  end
+
+end
+
+```
+
+
+## TDD; Run the test
+
+```
+F
+
+Failures:
+
+  1) HelloWorld should output 'Hello world'
+     Failure/Error: output = HelloWorld.bonjour
+
+     NoMethodError:
+       undefined method `bonjour' for HelloWorld:Class
+
+```
 
 
 ## Slide 2
