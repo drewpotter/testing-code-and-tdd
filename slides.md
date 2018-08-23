@@ -78,7 +78,7 @@ Many testing frameworks exist, here I will discuss a few of these.
 
 * Install RSpec
 * Write a spec
-* Run the spec;
+* Run the spec
 * Drive development of our app.
 
 
@@ -291,4 +291,11 @@ Finished in 0.00715 seconds (files took 0.18603 seconds to load)
 
 
 ## TDD; Summary
-* We have gone through the basic steps of using TDD.
+* We have gone through the basics of using TDD.
+* TDD is a feedback loop.
+* TDD improves code quality.
+
+
+## TDD; Questions
+* Any questions?
+* Thanks for watching this presentation!
