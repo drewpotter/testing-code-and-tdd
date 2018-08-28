@@ -325,8 +325,20 @@ Here we are clearly naming the test with it's purpose and what it is testing.
 ## 10 principles for testing
 4) There are many types of tests; this includes models, controllers, systems and integrations tests.
 * _model_ tests are pretty straightforward and as you would expect they test your models.
+
+
+## 10 principles for testing
+4) There are many types of tests; this includes models, controllers, systems and integrations tests.
 * _controller_ tests, similarly, are straightforward and provide functional testing for your controllers.
-* _system_ tests through the use of Capybara allow you to test user interaction with your Rails app.
+
+
+## 10 principles for testing
+4) There are many types of tests; this includes models, controllers, systems and integrations tests.
+* _system_ tests allow you to test user interaction with your app.
+
+
+## 10 principles for testing
+4) There are many types of tests; this includes models, controllers, systems and integrations tests.
 * _integration_ tests are used to test how particular parts of your application interact.
 
 
@@ -339,7 +351,9 @@ Here we are clearly naming the test with it's purpose and what it is testing.
   end
 ```
 
-This can also apply when logging in the user if they are supposed to be logged in for example in all tests of the same Ruby test file.
+
+## 10 principles for testing
+5) DRY, Don't Repeat Yourself - this can also apply when logging in the user if they are supposed to be logged in for example in all tests of the same Ruby test file.
 
 
 ## 10 principles for testing
