@@ -64,6 +64,7 @@ Many testing frameworks exist, here I will discuss a few of these.
 ## Testing frameworks; JavaScript
 * Mocha
 * Chai
+* PhantomJS - headless browser (abandoned)
 
 
 ## Testing frameworks; Solidity
@@ -72,6 +73,12 @@ Many testing frameworks exist, here I will discuss a few of these.
 
 ## Testing frameworks; Elixir
 * ExUnit
+* wallaby (requires PhantomJS)
+
+
+## Testing frameworks; Browser
+* Selenium
+* Cucumber
 
 
 ## Let's look at RSpec
@@ -376,7 +383,13 @@ Here we are clearly naming the test with it's purpose and what it is testing.
 10) Remove duplication; This method of development allows us to continually refactor until all duplication is removed.
 
 
+## TDD; Strategy for testing
+* How can we move to a TDD approach?
+* Testing on the frontend and backend.
+* Any suggestions?
+
+
 ## TDD; Questions
-* Any questions?
+* Any questions? Let's start a strategy for testing!
 * Thanks for watching this presentation!
 * Contact: andrew.potter [at] unep-wcmc.org
