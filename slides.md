@@ -319,12 +319,13 @@ This primarily focuses on TDD or Test Driven Development when developing project
 3) Use clear test descriptions. It is vital to provide clear test descriptions. For example;
 
 ```
-  test "html request to /sites returns a list of the users sites" do
-    sign_in @user
-    get sites_path
+test "an admin can delete any response" do
+   sign_in @admin
 
-    assert_equal 2, @controller.instance_variable_get("@sites").count
-  end
+   assert_difference('Response.count', -1) do
+     delete survey_response_url(@survey, @response)
+   end
+end
 ```
 Here we are clearly naming the test with it's purpose and what it is testing.
 
